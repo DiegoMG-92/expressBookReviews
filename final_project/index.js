@@ -25,7 +25,7 @@ jwt.verify(token, "access", (err, user) => {
 
     // Attach user info to the request object so the route can use it
     req.user = user;
-    next(); // ✅ Let the request continue
+    next(); 
 });
 });
  
